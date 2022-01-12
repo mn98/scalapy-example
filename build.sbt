@@ -9,6 +9,8 @@ lazy val root = (project in file("."))
 
 libraryDependencies += "me.shadaj" %% "scalapy-core" % "0.5.1"
 
+fork := true
+
 import ai.kien.python.Python
 
 lazy val python = Python("/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9")
