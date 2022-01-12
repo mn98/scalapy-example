@@ -13,7 +13,7 @@ fork := true
 
 import ai.kien.python.Python
 
-lazy val python = Python("/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9")
+lazy val python = Python("/opt/anaconda3/bin/python3.9")
 
 lazy val scalapyJavaOpts = python.scalapyProperties.get.map {
   case (k, v) => s"""-D$k=$v"""
